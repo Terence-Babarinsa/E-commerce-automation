@@ -10,3 +10,5 @@ This project looks to test the following features:
 #### Product Search:
  - A pre-existing user can gain access to the platform using email and password.
  - Search for an HTC Touch HD, confirm the price, add it to the Cart, and verify the item is in the Cart.
+
+##Testing approach:
