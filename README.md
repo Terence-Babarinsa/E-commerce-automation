@@ -2,6 +2,7 @@
 This repository seeks to design and implement an automation framework to test the login and product search features on an e-commerce website
 ## Project overview
 This project looks to test the following features: 
+
 * Login:
  - Pre-existing users can gain access to the platform using email and password.
  - Upon successful entry, they should be able to view their account information.
