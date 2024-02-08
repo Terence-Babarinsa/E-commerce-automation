@@ -1,5 +1,5 @@
 # E-commerce-automation
-This repository seeks to design and implement an automation framework to test the login and product search features on an e-commerce website
+This repository documents the design and implementation of an automation framework to test the login and product search features on an e-commerce website
 
 ## Project overview
 This project looks to test the following features: 
