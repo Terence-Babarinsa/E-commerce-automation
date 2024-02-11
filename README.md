@@ -27,3 +27,7 @@ In my testing strategy, I prioritized the seamless transition from test scripts 
 - Class to assigns the relevant locators for a webelement
 ### Properties
 - Enumerator with locators for Iwebelements that are assigned by the GetMethods Class
+### Packages
+- NUnit
+- Specflow
+- Selenium
