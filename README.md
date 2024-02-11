@@ -16,14 +16,14 @@ In my testing strategy, I prioritized the seamless transition from test scripts 
 
 ## How to use the framework
 
-# Features
+### Features
 - BDD test scripts that are written in Gherkin syntax
-# StepDefinitions
+### StepDefinitions
 - StepDefinitions that generated from feature files
 - Each method correlates with a statement on each test script line
-# POM
+### POM
 - Page Object Models that contain locators for IWebelements and the interactions with the elements
-# GetMethods
+### GetMethods
 - Class to assigns the relevant locators for a webelement
-# Properties
+### Properties
 - Enumerator that has specified locators that are assigned by the GetMethods Class
