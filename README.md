@@ -25,4 +25,5 @@ In my testing strategy, I prioritized the seamless transition from test scripts 
 - Page Object Models that contain locators for IWebelements and the interactions with the elements
 # GetMethods
 - Class to assigns the relevant locators for a webelement
-# Enumerator that has specified locators that are assigned by the GetMethods Class
+# Properties
+- Enumerator that has specified locators that are assigned by the GetMethods Class
