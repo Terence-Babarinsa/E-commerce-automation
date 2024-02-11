@@ -1,0 +1,48 @@
+Feature: Pre existing User Login
+
+As a registered user 
+I should be able to gain acess to the website using my username and password 
+So that I can access my account information
+
+
+Scenario 1: Valid Login
+
+Given the valid url
+When I enter the corrrect username and password
+And click Login
+Then I can view my account information 
+
+Scenarioi 2: Invlaid email with correct password
+
+Given the correct url
+When I enter the invalid email and valid password
+And click Login
+Then I can not view my account information 
+
+Scenario 3: Invalid password with correct email 
+
+Given the correct url
+When I enter the invlaid password and valid email
+And click Login
+Then I can not view my account information 
+
+Scenario 4: Forgotten password with valid email
+
+Given the valid url
+When I navigate to the forgotten password page
+And enter a valid email address
+Then I am alerted that a confirmation link has been sent 
+
+Scenario 4: Forgotten password with invalid email
+
+Given the valid url
+When I navigate to the forgotten password page
+And enter the incorrect email address
+Then I am alerted that a confirmation link has not been sent 
+
+Scenario 5: Invalid url
+
+Given the invalid url
+When I enter the corrrect username and password
+Then I should experience an error message 
+
