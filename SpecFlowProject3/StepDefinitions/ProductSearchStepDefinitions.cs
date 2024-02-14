@@ -22,7 +22,7 @@ namespace SpecFlowProject3.StepDefinitions
 
             _driver = driver.GetDriver();
 
-            _driver.Navigate().GoToUrl("https://ecommerce-playground.lambdatest.io/index.php?route=common/home");
+            
 
             loginPage = new Login(_driver);
             product = new Product(_driver);
