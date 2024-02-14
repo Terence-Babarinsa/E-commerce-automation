@@ -18,7 +18,7 @@ namespace SpecFlowProject3.POM
         private IWebElement _searchResult => _getMethods.GetElement(ElementTypes.XPath, "//button[normalize-space()='Search']");
         private IWebElement _item => _getMethods.GetElement(ElementTypes.XPath, "//a[@id='mz-product-grid-image-28-212469']//div[@class='carousel-item active']//img[@title='HTC Touch HD']");
         private IWebElement _price => _getMethods.GetElement(ElementTypes.XPath, "//div[@class='price']");
-        private IWebElement _addToCart => _getMethods.GetElement(ElementTypes.XPath, "//div[@id='entry_216842']//button[@title='Add to Cart'][normalize-space()='Add to Cart']");
+        private IWebElement _addToCart => _getMethods.GetElement(ElementTypes.XPath, "(//button[@title='Add to Cart'][normalize-space()='Add to Cart'])[2]");
         private IWebElement _cartState => _getMethods.GetElement(ElementTypes.CssSelector, "div[id='entry_217825'] span[class='badge badge-pill badge-info cart-item-total']");
         private IWebElement _editCart => _getMethods.GetElement(ElementTypes.XPath, "(//a[normalize-space()='Edit cart'])[1]");
         private IWebElement _incorrectSearch => _getMethods.GetElement(ElementTypes.Id, "entry_212469");

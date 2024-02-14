@@ -13,12 +13,14 @@ namespace SpecFlowProject3.Drivers
     {
         public IWebDriver GetDriver()
         {
-            IWebDriver driver = null;
+            IWebDriver driver;
             ChromeOptions options = new ChromeOptions();
             options.AddArgument("--incognito");
-            options.AddArgument("--headless");
-            driver = new ChromeDriver();
-
+            //options.AddArgument("--headless");
+            options.AddArgument("--disable-gpu");
+            driver = new ChromeDriver(options);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Navigate().GoToUrl("https://ecommerce-playground.lambdatest.io/index.php?route=common/home");
             return driver;
         }
             
