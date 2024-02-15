@@ -23,6 +23,8 @@ In my testing strategy, I prioritized the seamless transition from test scripts 
 - Each method correlates with a statement on each test script line
 ### POM
 - Page Object Models that contain locators for IWebelements and the interactions with the elements
+### Drivers
+- Contains the driver class that defines the driver and controls its properties 
 ### GetMethods
 - Class to assigns the relevant locators for a webelement
 ### Properties
