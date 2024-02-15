@@ -4,6 +4,7 @@ using OpenQA.Selenium;
 using SpecFlowProject3.POM;
 using System;
 using TechTalk.SpecFlow;
+using SpecFlowProject3.Drivers;
 
 namespace SpecFlowProject3.StepDefinitions
 {
@@ -12,18 +13,12 @@ namespace SpecFlowProject3.StepDefinitions
     {
         private IWebDriver _driver;
         private Login loginPage;
-
-        [BeforeScenario]
-        public void BeforeScenario()
+        public PreExistingUserLoginStepDefinitions()
         {
-            //ChromeOptions options = new ChromeOptions();
-            //options.AddArgument("--headless");
-            _driver = new ChromeDriver();
-
-            _driver.Navigate().GoToUrl("https://ecommerce-playground.lambdatest.io/index.php?route=common/home");
-
+            _driver = CommonSetup.GetDriverInstance();
             loginPage = new Login(_driver);
         }
+
 
         [Given(@"the valid url")]
         public void GivenTheValidUrl()

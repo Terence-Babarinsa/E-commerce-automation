@@ -15,25 +15,13 @@ namespace SpecFlowProject3.StepDefinitions
         private Login loginPage;
         private Product product;
 
-        [BeforeScenario]
-        public void BeforeScenario()
+        public ProductSearchStepDefinitions()
         {
-            Driver driver = new Driver();
-
-            _driver = driver.GetDriver();
-
-            
-
+            _driver = CommonSetup.GetDriverInstance();
             loginPage = new Login(_driver);
             product = new Product(_driver);
         }
 
-        [AfterScenario]
-        public void AfterScenario()
-        {
-            _driver.Quit();
-            _driver.Dispose();
-        }
 
         [Given(@"a pre existing user logs in using their email and password")]
         public void GivenAPreExistingUserLogsInUsingTheirEmailAndPassword()
