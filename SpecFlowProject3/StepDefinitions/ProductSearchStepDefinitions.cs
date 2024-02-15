@@ -4,6 +4,7 @@ using SpecFlowProject3.POM;
 using System;
 using TechTalk.SpecFlow;
 using NUnit.Framework;
+using SpecFlowProject3.TestHooks;
 
 namespace SpecFlowProject3.StepDefinitions
 {
