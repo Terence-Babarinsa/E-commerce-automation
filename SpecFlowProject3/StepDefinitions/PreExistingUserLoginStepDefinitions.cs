@@ -4,7 +4,6 @@ using OpenQA.Selenium;
 using SpecFlowProject3.POM;
 using System;
 using TechTalk.SpecFlow;
-using SpecFlowProject3.Drivers;
 
 namespace SpecFlowProject3.StepDefinitions
 {
