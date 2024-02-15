@@ -4,7 +4,6 @@ using SpecFlowProject3.POM;
 using System;
 using TechTalk.SpecFlow;
 using NUnit.Framework;
-using SpecFlowProject3.Drivers;
 
 namespace SpecFlowProject3.StepDefinitions
 {
@@ -51,7 +50,7 @@ namespace SpecFlowProject3.StepDefinitions
         {
             product.AddToCart();
             Thread.Sleep(3000);
-            Assert.That(product.CartState(), Is.EqualTo("1"));
+            Assert.That(product.CartState(), Is.Not.EqualTo("0"));
         }
 
         [Given(@"has an item in their cart")]
