@@ -24,9 +24,11 @@ In my testing strategy, I prioritized the seamless transition from test scripts 
 ### POM
 - Page Object Models that contain locators for IWebelements and the interactions with the elements
 ### Drivers
-- Contains the driver class that defines the driver and controls its properties 
+- Contains the driver class that defines the driver and controls its properties
+### CommonSetup
+- Consolidates my BefreoScenario and AfterScenario for all StepDefinitions into a single file
 ### GetMethods
-- Class to assigns the relevant locators for a webelement
+- Class to assign the relevant locators for a webelement
 ### Properties
 - Enumerator with locators for Iwebelements that are assigned by the GetMethods Class
 ### Packages
